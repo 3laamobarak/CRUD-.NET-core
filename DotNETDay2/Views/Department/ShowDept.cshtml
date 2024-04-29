@@ -1,0 +1,26 @@
+﻿@model List<Department>
+
+<h1>Departments</h1>
+
+<table class="table table-hover table-bordered width =50%">
+
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Manger</td>
+
+    </tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.ID</td>
+        <td>@item.name</td>
+        <td>@item.manager</td>
+    </tr>
+}
+
+</table>
+
+<a href="/department/add" style="background-color : aquamarine" class="btn btn-alert-success">Add new Dept</a>
+
+

@@ -1,0 +1,19 @@
+﻿
+
+<form method="post" action="/Department/save">
+    <div>
+        <label for="Department Name">Department</label>
+        <input type="text" id="DepartmentName" name="name" 
+            class="form-control" value="@Model.name" />
+    </div>
+
+    <div>
+        <label for="Manager Name">Manger</label>
+        <input type="text" id="MangertName" name="manager"
+            class="form-control" value="@Model.manager"/>
+    </div>
+
+    <input type="submit" value="Add" class="btn btn-success" />
+
+
+</form>

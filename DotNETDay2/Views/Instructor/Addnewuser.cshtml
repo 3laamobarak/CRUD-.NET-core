@@ -1,0 +1,40 @@
+﻿
+
+<form action="/instructor/savenewuser" method="post">  
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="@Model.name" class="form-control"/>
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" value="@Model.address" class="form-control" />
+    </div>
+    <div>
+        <label for="salary">Salary</label>
+        <input type="text" id="salary" name="salary" value="@Model.salary" class="form-control" />
+    </div>
+
+    <div>
+        <label for="dept_id">Department</label>
+        <select name="dept_id" id="dept_id" class="form-control">
+            @foreach(var item in ViewBag.depts)
+            {
+                if(Model.dept_id==item.ID)
+                {
+                    <option value="@item.ID" selected>@item.name</option>
+                }
+                else
+                {
+                    <option value="@item.ID">@item.name</option>
+                }
+            }
+        </select>
+    </div>
+
+    <input type="submit" class="btn btn-success" value="ADD"/>
+
+
+
+</form>
+
+
