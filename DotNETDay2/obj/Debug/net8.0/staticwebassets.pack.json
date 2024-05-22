@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\DotNETDay2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\assets\\profile.png",
+      "PackagePath": "staticwebassets\\assets\\profile.png"
+    },
+    {
       "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\cssbootstrap\\styles.css",
+      "PackagePath": "staticwebassets\\cssbootstrap\\styles.css"
     },
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\favicon.ico",
@@ -15,6 +27,10 @@
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\jsbootstrap\\scripts.js",
+      "PackagePath": "staticwebassets\\jsbootstrap\\scripts.js"
     },
     {
       "Id": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\wwwroot\\lib\\bootstrap\\LICENSE",

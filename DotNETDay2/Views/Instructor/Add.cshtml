@@ -1,41 +1,31 @@
 ﻿@model Instructor
-<form action="/instructor/save/@Model.ID" method="post">
+@{
+    SelectList selist;
+    if(Model!=null) {selist= new SelectList(ViewBag.depts, "ID", "name",Model.dept_id);}
+    else{selist = new SelectList(ViewBag.depts, "ID", "name");}
+}
+<form asp-action="save" asp-controller="instructor" asp-route-id="@Model.ID" method="post">
     
     <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" value="@Model.name" class="form-control" />
+        <label asp-for="name">Name</label>
+        <input asp-for="name" class="form-control" />
     </div>
     <div>
-        <label for="salary">Salary</label>
-        <input type="text" id="salary" name="salary" value="@Model.salary" class="form-control" />
+        <label asp-for="salary"></label>
+        <input asp-for="salary" class="form-control" />
     </div>
     <div>
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address" value="@Model.address" class="form-control" />
+        <label asp-for="address"></label>
+        <input asp-for="address" class="form-control" />
     </div>
-    <div>
-        <label for="dept_id">Department</label>
-        
-        <select name="dept_id" id="dept_id" class="form-control">
-            @foreach(var item in ViewBag.depts)
-            {
-                if (item.ID == Model.dept_id)
-                {
-                    <option value="@item.ID" selected>@item.name</option>
-                }
-                else
-                {
-                    <option value="@item.ID" >@item.name</option>
-                }
-            }
-        </select>
-        
 
-
+    <div>
+        <label asp-for="dept_id">Department</label>
+        <select asp-for="dept_id" asp-items="selist" class="form-control"></select>
     </div>
 
     <input type="submit" value="Add" class="btn btn-success" />
 
 </form>
 
-
+   

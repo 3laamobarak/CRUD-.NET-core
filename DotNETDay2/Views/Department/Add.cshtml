@@ -1,16 +1,15 @@
-﻿
+﻿@model Department
 
-<form method="post" action="/Department/save">
+
+<form method="post" asp-action="save" asp-controller="Department">
     <div>
-        <label for="Department Name">Department</label>
-        <input type="text" id="DepartmentName" name="name" 
-            class="form-control" value="@Model.name" />
+        <label asp-for="name"></label>
+        <input asp-for="name" class="form-control" />
     </div>
 
     <div>
-        <label for="Manager Name">Manger</label>
-        <input type="text" id="MangertName" name="manager"
-            class="form-control" value="@Model.manager"/>
+        <label asp-for="manager"></label>
+        <input asp-for="manager" class="form-control" />
     </div>
 
     <input type="submit" value="Add" class="btn btn-success" />

@@ -1,40 +1,33 @@
-﻿
-
-<form action="/instructor/savenewuser" method="post">  
+﻿@model Instructor
+@{
+    SelectList selit;
+    if(Model.ID!=null)
+    {selit = new SelectList(ViewBag.depts, "ID", "name", Model.ID);}
+    else
+    {selit = new SelectList(ViewBag.depts, "ID", "name");}
+}
+<form asp-action="savenewuser" asp-controller="instructor" method="post">
     <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" value="@Model.name" class="form-control"/>
+        <label asp-for="name">Name</label>
+        <input asp-for="name"class="form-control"/>
+        <span asp-validation-for="name"></span>
     </div>
     <div>
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address" value="@Model.address" class="form-control" />
+        <label asp-for="address"></label>
+        <input asp-for="address" class="form-control" />
+        <span asp-validation-for="address"></span>
+
     </div>
     <div>
-        <label for="salary">Salary</label>
-        <input type="text" id="salary" name="salary" value="@Model.salary" class="form-control" />
+        <label asp-for="salary">Salary</label>
+        <input asp-for="salary" class="form-control" />
+        <span asp-validation-for="salary"></span>
     </div>
-
     <div>
-        <label for="dept_id">Department</label>
-        <select name="dept_id" id="dept_id" class="form-control">
-            @foreach(var item in ViewBag.depts)
-            {
-                if(Model.dept_id==item.ID)
-                {
-                    <option value="@item.ID" selected>@item.name</option>
-                }
-                else
-                {
-                    <option value="@item.ID">@item.name</option>
-                }
-            }
-        </select>
+        <label asp-for="dept_id">Department</label>
+        <select asp-for="dept_id" asp-items="selit" class="form-control"></select>
+        <span asp-validation-for="dept_id"></span>
     </div>
-
-    <input type="submit" class="btn btn-success" value="ADD"/>
-
-
+    <input type="submit" class="btn btn-success" value="ADD" />
 
 </form>
-
-

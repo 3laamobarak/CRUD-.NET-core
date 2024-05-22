@@ -65,9 +65,12 @@ namespace DotNETDay2.Controllers
         }
         public IActionResult savenewuser(Instructor inst)
         {
-            if(inst.salary!=null && inst.address!=null &&inst.name!=null && inst.dept_id!=null) 
+            List<Department>dept=context.Department.ToList();
+            ViewData["depts"] = dept;
+            //if(inst.salary!=null && inst.address!=null &&inst.name!=null && inst.dept_id!=null) 
+                inst.image = "image.png";
+            if(ModelState.IsValid)
             {
-                inst.image = "image.1";
                 context.Instructor.Add(inst);
                 context.SaveChanges();
                 return RedirectToAction("showinstructor");
