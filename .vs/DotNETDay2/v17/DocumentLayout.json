@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\views\\instructor\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\views\\instructor\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Add.cshtml",
+              "RelativeDocumentMoniker": "DotNETDay2\\Views\\Instructor\\Add.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Add.cshtml",
+              "RelativeToolTip": "DotNETDay2\\Views\\Instructor\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T11:07:36.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Addnewuser.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
+              "RelativeDocumentMoniker": "DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
+              "RelativeToolTip": "DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:51:03.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "DotNETDay2\\Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "DotNETDay2\\Controllers\\InstructorController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwCYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T18:15:00.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "DotNETDay2\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "DotNETDay2\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:31:09.69Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

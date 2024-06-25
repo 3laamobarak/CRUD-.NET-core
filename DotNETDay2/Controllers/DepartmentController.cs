@@ -30,7 +30,13 @@ namespace DotNETDay2.Controllers
             }
             return View("add",dept);
         }
+        public IActionResult GetInstructorByDeptName(string name)
+        {
+            List<Department> dept = context.Department.ToList();
+            ViewData["depts"] = dept;
 
-
+            List<Instructor> inst = context.Instructor.Where(s => s.dept.name == name).ToList();
+            return PartialView(inst);
+        }
     }
 }

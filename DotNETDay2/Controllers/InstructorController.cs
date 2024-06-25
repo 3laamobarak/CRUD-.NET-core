@@ -9,6 +9,29 @@ namespace DotNETDay2.Controllers
     {
 
         Day2context context = new Day2context();
+        public IActionResult NameExist(string Name, int id)
+        {
+            if (id == 0)//new
+            {
+                Instructor inst = context.Instructor.FirstOrDefault(s => s.name == Name);
+                if (inst == null)
+                    return Json(true);
+                else return Json(false);
+            }
+            else//Edit
+            {
+                Instructor inst = context.Instructor.FirstOrDefault(s => s.name == Name);
+                if (inst == null)
+                    return Json(true);
+                else
+                {
+                    if (inst.ID == id)
+                        return Json(true);
+                    else
+                        return Json(false);
+                }
+            }
+        }
         public IActionResult Showinstructor()
         {
             List<instructorwithdeptname> lisdept =
@@ -25,7 +48,7 @@ namespace DotNETDay2.Controllers
             return View(lisdept);
         }
 
-        public IActionResult Add(int id)
+        public IActionResult Edit(int id)
         {
 
             List<Department> dept = context.Department.ToList();

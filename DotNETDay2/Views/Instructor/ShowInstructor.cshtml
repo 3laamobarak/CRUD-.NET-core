@@ -23,7 +23,7 @@
             <td>@item.salary</td>
             <td>@item.departmentname</td>
             <td>
-                <a asp-action="add" asp-controller="instructor" asp-route-id="@item.id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a>
+                <a asp-action="Edit" asp-controller="instructor" asp-route-id="@item.id" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a>
                 <a asp-action="Delete" asp-controller="instructor" asp-route-id="@item.id" style="background-color : red" class="btn btn-warning">Delete</a>
             </td>
         </tr>
