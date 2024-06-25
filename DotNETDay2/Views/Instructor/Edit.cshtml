@@ -6,17 +6,22 @@
 }
 <form asp-action="save" asp-controller="instructor" asp-route-id="@Model.ID" method="post">
     
+    <input asp-for="ID" type="hidden" />
     <div>
         <label asp-for="name">Name</label>
         <input asp-for="name" class="form-control" />
+        <span asp-validation-for="name"></span>
     </div>
     <div>
         <label asp-for="salary"></label>
         <input asp-for="salary" class="form-control" />
+        <span asp-validation-for="salary"></span>
+
     </div>
     <div>
         <label asp-for="address"></label>
         <input asp-for="address" class="form-control" />
+        <span asp-validation-for="address"></span>
     </div>
 
     <div>
@@ -24,7 +29,7 @@
         <select asp-for="dept_id" asp-items="selist" class="form-control"></select>
     </div>
 
-    <input type="submit" value="Add" class="btn btn-success" />
+    <input type="submit" value="Edit" class="btn btn-success" />
 
 </form>
 

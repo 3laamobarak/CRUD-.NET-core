@@ -15,7 +15,7 @@
         <td>ID</td>
         <td>Name</td>
         <td>Manger</td>
-
+        <td>Action</td>
     </tr>
 @foreach (var item in Model)
 {
@@ -23,6 +23,11 @@
         <td>@item.ID</td>
         <td>@item.name</td>
         <td>@item.manager</td>
+        <td>
+            <a asp-action="Edit" asp-controller="Department" asp-route-id="@item.ID" style="background-color : aquamarine" class="btn btn-alert-success">Edit</a>
+            <a asp-action="Delete" asp-controller="Department" asp-route-id="@item.ID" style="background-color : red" class="btn btn-warning">Delete</a>
+        </td>
+
     </tr>
 }
 

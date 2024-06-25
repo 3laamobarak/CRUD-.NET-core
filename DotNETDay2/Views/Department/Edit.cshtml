@@ -1,0 +1,20 @@
+﻿@model Department
+
+<form asp-action="saveEdit" asp-controller="Department" asp-route-id="@Model.ID" method="post">
+    
+    <input asp-for="ID" type="hidden" />
+    <div>
+        <label asp-for="name">Name</label>
+        <input asp-for="name" class="form-control" />
+        <span asp-validation-for="name"></span>
+    </div>
+    <div>
+        <label asp-for="manager">Manager</label>
+        <input asp-for="manager" class="form-control" />
+        <span asp-validation-for="manager"></span>
+    </div>
+    <input type="submit" value="Edit" class="btn btn-success" />
+
+</form>
+
+   

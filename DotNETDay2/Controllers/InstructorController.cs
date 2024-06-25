@@ -1,4 +1,5 @@
 ﻿using DotNETDay2.Models;
+using DotNETDay2.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,49 +8,65 @@ namespace DotNETDay2.Controllers
 {
     public class InstructorController : Controller
     {
-
-        Day2context context = new Day2context();
+        IInstructorService InstructorService;
+        IDepartmentService DepartmentService;
+        //DI 
+        //IOC container ==ServiceProvider
+        public InstructorController(IInstructorService _instS,IDepartmentService _deptS)
+        {
+            InstructorService = _instS;
+            DepartmentService = _deptS;
+        }
+        public IActionResult NameExist(string Name, int id)
+        {
+            if (id == 0)//new
+            {
+                Instructor inst = InstructorService.getbyName(Name);
+                if (inst == null)
+                    return Json(true);
+                else return Json(false);
+            }
+            else//Edit
+            {
+                Instructor inst = InstructorService.getbyName(Name);
+                if (inst == null)
+                    return Json(true);
+                else
+                {
+                    if (inst.ID == id)
+                        return Json(true);
+                    else
+                        return Json(false);
+                }
+            }
+        }
         public IActionResult Showinstructor()
         {
-            List<instructorwithdeptname> lisdept =
-                context.Instructor
-                .Include(s => s.dept)
-                .Select(i => new instructorwithdeptname
-                {
-                    id = i.ID,
-                    name = i.name,
-                    salary = i.salary,
-                    address= i.address,
-                    departmentname = i.dept.name
-                }).ToList();
+            List<instructorwithdeptname> lisdept = InstructorService.GetInstructorwithdeptnames();
             return View(lisdept);
         }
 
-        public IActionResult Add(int id)
+        public IActionResult Edit(int id)
         {
 
-            List<Department> dept = context.Department.ToList();
+            List<Department> dept = DepartmentService.getAll();
             ViewData["depts"] = dept;
-            Instructor inst =context.Instructor.FirstOrDefault(s=>s.ID==id);
+         
+            Instructor inst =InstructorService.getById(id);
             return View(inst);
         }
         public IActionResult save([FromRoute]int id,Instructor newinstr)
         {
-            Instructor inst = context.Instructor.FirstOrDefault(s => s.ID == id);
-            inst.name=newinstr.name;
-            inst.address=newinstr.address;
-            inst.salary=newinstr.salary;
-            inst.dept_id=newinstr.dept_id;
-            context.SaveChanges();
+            InstructorService.update(id, newinstr);
             return RedirectToAction("showinstructor");  
         }
         public IActionResult Delete(int id)
         {
-            Instructor inst = context.Instructor.FirstOrDefault(s => s.ID == id);
+
+            Instructor inst = InstructorService.getById(id);
             if(inst!= null)
             {   
-                context.Instructor.Remove(inst);
-                context.SaveChanges();
+                InstructorService.delete(id);
             }
             return RedirectToAction("Showinstructor");
         }
@@ -58,21 +75,20 @@ namespace DotNETDay2.Controllers
         {
             Instructor inst =new Instructor();
 
-            List<Department>dept =context.Department.ToList();
+            List<Department>dept =DepartmentService.getAll();
             ViewData["depts"]=dept;
 
             return View(inst);
         }
         public IActionResult savenewuser(Instructor inst)
         {
-            List<Department>dept=context.Department.ToList();
+            List<Department>dept=DepartmentService.getAll();
             ViewData["depts"] = dept;
             //if(inst.salary!=null && inst.address!=null &&inst.name!=null && inst.dept_id!=null) 
                 inst.image = "image.png";
             if(ModelState.IsValid)
             {
-                context.Instructor.Add(inst);
-                context.SaveChanges();
+                InstructorService.create(inst);
                 return RedirectToAction("showinstructor");
             }
             return View("addnewuser", inst);
@@ -81,8 +97,7 @@ namespace DotNETDay2.Controllers
 
         public IActionResult Details(int id)
         {
-            List<Instructor> instmodel =
-            context.Instructor.Where(s=>s.dept_id==id).ToList();
+            List<Instructor> instmodel = InstructorService.details(id);
             return View("Details",instmodel);
         }
     }

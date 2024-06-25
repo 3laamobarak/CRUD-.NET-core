@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
@@ -8,7 +9,8 @@ namespace DotNETDay2.Models
     {
         public int ID { get; set; }
         [Required]
-        [RegularExpression(pattern:"[a-zA-z]{3,}")]
+        [RegularExpression(pattern:"[a-zA-z_]{3,}")]
+        [Remote (controller:"instructor",action:"NameExist",AdditionalFields ="ID")]
         public string name { get; set; }
 //        [RegularExpression(@"\w+\.(jpg|png)")]
         public string? image { get; set; }
@@ -17,6 +19,7 @@ namespace DotNETDay2.Models
         public int salary { get; set; }
         [Required]
         [MaxLength(100)]
+        [addressvalidator]
         public string address { get; set; }
         [ForeignKey("dept")]
         public int dept_id { get; set; }
