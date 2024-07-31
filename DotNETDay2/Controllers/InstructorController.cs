@@ -4,8 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 namespace DotNETDay2.Controllers
 {
+    [Authorize]
     public class InstructorController : Controller
     {
         IInstructorService InstructorService;

@@ -1,9 +1,11 @@
 ﻿using DotNETDay2.Models;
 using DotNETDay2.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNETDay2.Controllers
 {
+    [Authorize]
     public class DepartmentController : Controller
     {
         

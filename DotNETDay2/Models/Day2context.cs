@@ -1,9 +1,11 @@
 ﻿using Microsoft.Extensions.Options;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 namespace DotNETDay2.Models
 {
-    public class Day2context:DbContext
+    public class Day2context:IdentityDbContext
     {
         public Day2context()
         {
@@ -18,7 +20,7 @@ namespace DotNETDay2.Models
         
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\ProjectModels;Initial Catalog=Day2;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\ProjectModels;Initial Catalog=FirstTraining;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
     }
 }

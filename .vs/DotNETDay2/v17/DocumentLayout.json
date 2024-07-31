@@ -1,21 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\",
+  "WorkspaceRootPath": "I:\\Projects\\CRUD-.NET-core\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\views\\instructor\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|i:\\projects\\crud-.net-core\\dotnetday2\\views\\instructor\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\views\\instructor\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|i:\\projects\\crud-.net-core\\dotnetday2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|c:\\users\\dell\\source\\repos\\dotnetday2\\dotnetday2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|i:\\projects\\crud-.net-core\\dotnetday2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F45AC4F4-AD81-48C5-BDDF-4D88D907E4D9}|DotNETDay2\\DotNETDay2.csproj|solutionrelative:dotnetday2\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -41,21 +40,17 @@
               "DocumentIndex": 0,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Add.cshtml",
-              "RelativeDocumentMoniker": "DotNETDay2\\Views\\Instructor\\Add.cshtml",
               "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Add.cshtml",
-              "RelativeToolTip": "DotNETDay2\\Views\\Instructor\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T11:07:36.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T11:07:36.047Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Addnewuser.cshtml",
-              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
+              "DocumentMoniker": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
               "RelativeDocumentMoniker": "DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
+              "ToolTip": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
               "RelativeToolTip": "DotNETDay2\\Views\\Instructor\\Addnewuser.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -65,9 +60,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "InstructorController.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\InstructorController.cs",
+              "DocumentMoniker": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\Controllers\\InstructorController.cs",
               "RelativeDocumentMoniker": "DotNETDay2\\Controllers\\InstructorController.cs",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\InstructorController.cs",
+              "ToolTip": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\Controllers\\InstructorController.cs",
               "RelativeToolTip": "DotNETDay2\\Controllers\\InstructorController.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAmwCYAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -77,9 +72,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\DepartmentController.cs",
+              "DocumentMoniker": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "DotNETDay2\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\Controllers\\DepartmentController.cs",
+              "ToolTip": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "DotNETDay2\\Controllers\\DepartmentController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\DotNETDay2.csproj": {}
+    "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\DotNETDay2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\DotNETDay2.csproj": {
+    "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\DotNETDay2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\DotNETDay2.csproj",
+        "projectUniqueName": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\DotNETDay2.csproj",
         "projectName": "DotNETDay2",
-        "projectPath": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\DotNETDay2.csproj",
+        "projectPath": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\DotNETDay2.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\source\\repos\\DotNETDay2\\DotNETDay2\\obj\\",
+        "outputPath": "I:\\Projects\\CRUD-.NET-core\\DotNETDay2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,17 +47,33 @@
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
-              "version": "[6.4.4, )"
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
           "imports": [
